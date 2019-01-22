@@ -14,7 +14,7 @@ public class UserService {
 	static List<User> users = new ArrayList();
 	static {
 		users.add(new User(123, "alice", "alice", "Alice", "Wonderland"));
-		users.add(new User(234, "bob", "bob", "Bob", "Marley"));
+		users.add(new User(111, "Jiahao", "Cai", "Bob", "Marley"));
 	}
 	@GetMapping("/api/user")
 	public List<User> findAllUsers() {
