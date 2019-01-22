@@ -1,4 +1,4 @@
-package edu.neu.cs4500.services;
+package edu.neu.cs4500.models;
 
 public class User {
 	private Integer id;
@@ -6,6 +6,19 @@ public class User {
 	private String password;
 	private String firstName;
 	private String lastName;
+	
+	public User() {}
+	
+	
+	public User(int id, String firstName, String lastName, String username, String password) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.username = username;
+		this.password = password;
+	}
+
 	// provide a public set and get method for each of the class variables above
 	// make sure to use proper naming conventions for Java methods, e.g.,
 	// methods should be camelcase. Here's an example using the firstName variable:
