@@ -9,7 +9,7 @@ public class User {
 	
 	public User() {}
 	
-	public User(int id, String firstName, String lastName, String username, String password) {
+	public User(Integer id, String firstName, String lastName, String username, String password) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
