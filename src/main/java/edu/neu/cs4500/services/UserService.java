@@ -14,7 +14,7 @@ public class UserService {
 	static List<User> users = new ArrayList();
 	static {
 		users.add(new User(123, "alice", "alice", "Alice", "Wonderland"));
-		users.add(new User(111, "Jiahao", "Cai", "Bob", "Marley"));
+		users.add(new User(234, "Jiahao", "Cai", "Bob", "Marley"));
 	}
 	@GetMapping("/api/user")
 	public List<User> findAllUsers() {
@@ -24,7 +24,7 @@ public class UserService {
 	@GetMapping("/api/user/{userId}")
 	public User findUserById(@PathVariable("userId") Integer id) {
 		for(User user: users) {
-			if(user.getId() == id) {
+			if(user.getId().equals(id)) {
 				return user;
 				}
 			}
